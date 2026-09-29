@@ -35,9 +35,9 @@ OFFLINE_MODE = """이 버전은 이미지 파일이 없다. 삽화를 표시할 
 `🖼️ 삽화: (장면 이름)` — 예: `🖼️ 삽화: 닭아빠 심문 스포트라이트`
 이미지를 생성하거나 검색하지 않는다."""
 
-ONLINE_MODE = """삽화는 반드시 **클릭 가능한 링크** 한 줄로 넣는다(마크다운 이미지 `![]()` 문법은 쓰지 않는다 — 대부분의 AI 화면에서 빈칸이 된다).
-형식: `🖼️ [삽화 보기: 장면 이름](주소)`
-예: `🖼️ [삽화 보기: 닭아빠 심문 스포트라이트](BASEimg/chicken.webp)`
+ONLINE_MODE = """UI 모드: 장면이 바뀌면 맨 위에 마크다운 이미지 `![장면 이름](주소)` 한 줄.
+텍스트 모드: 이미지가 화면에 그려지지 않는 환경이면 `🖼️ [삽화 보기: 장면 이름](주소)` 링크 한 줄로 넣는다.
+예: `![닭아빠 심문](BASEimg/chicken.webp)` / `🖼️ [삽화 보기: 닭아빠 심문](BASEimg/chicken.webp)`
 주소는 [삽화 목록]에 적힌 것을 글자 하나 바꾸지 말고 그대로 쓴다. 이미지를 새로 생성하거나 검색하지 않는다."""
 
 
@@ -77,7 +77,10 @@ body{{margin:0;background:#1a1222;color:#f5ecdc;font:15px/1.7 "Malgun Gothic","A
 .gal img{{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block}}
 pre{{white-space:pre-wrap;background:#221729;border:1px solid #4a3760;border-radius:14px;padding:18px;font:14px/1.7 inherit}}
 </style></head><body><div class="w">
-<div class="how"><b>사용법</b> — 이 파일을 ChatGPT·Gemini·Claude 대화창에 첨부하고 <b>「게임 실행해줘」</b>라고 보내세요. 첨부가 안 되면 아래 내용을 전부 복사해서 붙여넣고 보내면 됩니다.</div>
+<div class="how"><b>사용법</b> — AI 새 대화에 <b>이 파일을 첨부</b>하고 <b>「게임 실행해줘」</b>라고 보내세요.<br>
+· <b>ChatGPT</b>: 파일 첨부 또는 이 파일의 인터넷 주소를 붙여넣어도 됩니다.<br>
+· <b>Gemini</b>: 반드시 <b>파일 첨부</b>(링크·Canvas로는 게임이 안 됩니다). 첨부가 안 되면 아래 내용을 전부 복사해 붙여넣으세요.<br>
+· 장면이 바뀌면 나오는 「🖼️ 삽화 보기」를 누르면 삽화가 열립니다.</div>
 {gallery}
 <pre>
 {html.escape(text)}
