@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>막장 로판 게임관 · AI 게임팩</title>
+<meta name="description" content="ChatGPT·Gemini·Claude에 파일 하나 넣고 '게임 실행해줘'. 개막장 코믹 로판 채팅 게임 5종.">
+<meta property="og:title" content="막장 로판 게임관 · AI 게임팩">
+<meta property="og:description" content="파일 하나 넣고 '게임 실행해줘'. 빚 10만 골드 공녀와 선글라스 닭아빠의 영지재건기 외 4종.">
+<meta property="og:image" content="https://shiningshuri.github.io/rofan-game-pack/img/cast.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;700;800&family=Gowun+Dodum&display=swap">
+<style>
+:root{--night:#1a1222;--plum:#261a31;--plum2:#31223f;--line:#4a3760;--gold:#e0bd72;--gold-soft:#f1dcaa;--lav:#bfa4e6;--cream:#f5ecdc;--muted:#b8a9c8;--faint:#8a7a9c;
+  --display:"Hahmlet","Nanum Myeongjo",serif;--body:"Gowun Dodum","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--cream);font:15px/1.7 var(--body);word-break:keep-all;overflow-wrap:break-word;
+  background-image:radial-gradient(1200px 600px at 80% -10%,rgba(191,164,230,.13),transparent 60%)}
+.w{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+a{color:var(--gold-soft)}
+.hero{position:relative;border-radius:22px;overflow:hidden;border:1px solid #8a6d3b;aspect-ratio:16/9;max-height:520px;width:100%;background:#000}
+.hero video{width:100%;height:100%;object-fit:cover;display:block}
+.hero .v{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(26,18,34,.94))}
+.hero .t{position:absolute;left:0;right:0;bottom:0;padding:22px 26px;display:grid;gap:6px}
+.eb{font-size:12px;letter-spacing:.18em;color:var(--gold)}
+.hero h1{font-size:clamp(28px,5vw,52px);font-weight:800;color:var(--gold-soft)}
+.hero p{margin:0;max-width:60ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}
+.step{background:var(--plum);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:grid;gap:4px}
+.step b{font-family:var(--display);font-size:22px;color:var(--gold)}
+.step h3{font-size:17px;color:var(--gold-soft)}
+.step p{margin:0;color:var(--muted);font-size:14px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--plum);border:1px solid #8a6d3b;border-radius:16px;padding:16px 18px}
+.btn{display:inline-block;border:1px solid #8a6d3b;background:transparent;color:var(--gold-soft);padding:10px 16px;border-radius:10px;font:600 15px var(--body);text-decoration:none;cursor:pointer}
+.btn.p{background:linear-gradient(180deg,#ecd08e,#c9a052);color:#2a1c10;border-color:#f0d9a0}
+.btn:hover{filter:brightness(1.08)}
+.note{color:var(--faint);font-size:13px}
+h2{font-size:24px;color:var(--gold-soft);margin:36px 0 14px}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.g{background:var(--plum);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.g img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.g div{padding:12px 16px 16px}
+.g h3{font-size:17px;color:var(--gold-soft);margin-bottom:4px}
+.g p{margin:0;color:var(--muted);font-size:14px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.gal a{display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);aspect-ratio:3/2}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gal a:hover img{transform:scale(1.04)}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.vids video{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+.faq{display:grid;gap:10px}
+.faq details{background:var(--plum);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--gold-soft)}
+.faq p{margin:8px 0 0;color:var(--muted)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}.hero{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><div class="w">
+
+<section class="hero">
+  <video src="vid/opening.mp4" poster="img/opening.webp" autoplay muted loop playsinline></video>
+  <div class="v"></div>
+  <div class="t">
+    <span class="eb">AI 채팅 게임팩 · 무료</span>
+    <h1>막장 로판 게임관</h1>
+    <p>빚 10만 골드 공녀, 선글라스 닭아빠, 집착 황태자. 파일 하나를 쓰는 AI에 넣고 "게임 실행해줘"라고 하면 시작됩니다.</p>
+  </div>
+</section>
+
+<div class="steps">
+  <div class="step"><b>1</b><h3>게임팩 받기</h3><p>아래 버튼으로 파일을 받거나 내용을 복사하세요.</p></div>
+  <div class="step"><b>2</b><h3>AI에 넣기</h3><p>ChatGPT·Gemini·Claude 새 대화에 첨부하거나 붙여넣기.</p></div>
+  <div class="step"><b>3</b><h3>"게임 실행해줘"</h3><p>게임을 고르고, 번호를 누르거나 아무 명령이나 치면 진행됩니다.</p></div>
+</div>
+
+<div class="cta">
+  <a class="btn p" href="dist/막장로판_게임팩.html" download="막장로판_게임팩.html">게임팩 받기 (.html)</a>
+  <a class="btn" href="dist/막장로판_게임팩.txt" download="막장로판_게임팩.txt">텍스트 버전 (.txt)</a>
+  <button class="btn" id="copy">내용 전체 복사</button>
+  <span class="note" id="cn">첨부가 안 되는 AI라면 복사해서 붙여넣으세요.</span>
+</div>
+
+<h2>들어 있는 게임</h2>
+<div class="games">
+  <article class="g"><img src="img/cast.webp" alt="몰락한 공녀의 영지재건기 등장인물" loading="lazy"><div><h3>몰락한 공녀의 영지재건기</h3><p>빚 10만 골드, 집사 하나, 자칭 공작 닭 한 마리로 제국 최고 재벌까지. DAY 317 세이브도 포함.</p></div></article>
+  <article class="g"><img src="img/demon.webp" alt="편의점 알바 마왕" loading="lazy"><div><h3>회귀한 마왕님은 편의점 야간알바 중</h3><p>천 년 군림한 마왕이 망원동 편의점 알바로. 세계정복 전에 월세부터.</p></div></article>
+  <article class="g"><img src="img/cathusband.webp" alt="고양이가 된 남편" loading="lazy"><div><h3>계약결혼 남편이 밤마다 고양이가 됩니다</h3><p>냉혈 대공의 비밀은 자정마다 뚱뚱한 치즈냥이.</p></div></article>
+  <article class="g"><img src="img/idol.webp" alt="망한 소속사 연습실" loading="lazy"><div><h3>망한 소속사를 1원에 인수했습니다</h3><p>빚 3억에 멤버는 잠만보·치킨 먹방·오열 전문.</p></div></article>
+  <article class="g"><img src="img/custom.webp" alt="마법의 책" loading="lazy"><div><h3>내맘대로 세계관</h3><p>설정 한 줄을 쓰면 AI가 세계를 만들고, 명령할수록 불어납니다.</p></div></article>
+</div>
+
+<h2>삽화</h2>
+<div class="gal" id="gal"></div>
+
+<h2>영상</h2>
+<div class="vids">
+  <video src="vid/chicken.mp4" poster="img/chicken.webp" controls muted loop playsinline preload="none"></video>
+  <video src="vid/gold.mp4" poster="img/gold.webp" controls muted loop playsinline preload="none"></video>
+</div>
+
+<h2>자주 묻는 것</h2>
+<div class="faq">
+  <details><summary>돈이 드나요?</summary><p>게임팩은 무료입니다. 게임 진행은 각자 쓰는 AI 계정으로 하니, 그 AI의 무료·유료 한도 안에서 즐기면 됩니다.</p></details>
+  <details><summary>이미지가 안 보이고 링크로만 나와요</summary><p>AI 앱에 따라 대화창에 외부 이미지를 띄우지 않는 경우가 있습니다. 링크를 누르면 삽화가 열립니다.</p></details>
+  <details><summary>이어서 하고 싶어요</summary><p>게임 중에 "세이브"라고 치면 세이브 코드가 나옵니다. 새 대화에 게임팩과 세이브 코드를 같이 넣으면 이어집니다.</p></details>
+  <details><summary>대화가 길어져서 느려요</summary><p>"세이브"로 코드를 받은 뒤 새 대화에서 이어가세요.</p></details>
+</div>
+
+</div>
+<script>
+const G=["opening","cast","debt","chicken","inlaw","farm","wedding","bitnyang","nursery","dragon","catcity","golem","crisis","gold"];
+document.getElementById("gal").innerHTML=G.map(k=>`<a href="img/${k}.webp" target="_blank" rel="noopener"><img src="img/${k}.webp" alt="" loading="lazy"></a>`).join("");
+document.getElementById("copy").onclick=async()=>{
+  const n=document.getElementById("cn");
+  try{const t=await (await fetch("dist/막장로판_게임팩.txt")).text();await navigator.clipboard.writeText(t);n.textContent="복사했어요. AI 대화창에 붙여넣고 '게임 실행해줘'라고 보내세요."}
+  catch{n.textContent="복사에 실패했어요. 텍스트 버전을 열어서 전체 선택해 복사해주세요."}
+};
+</script>
+</body></html>
